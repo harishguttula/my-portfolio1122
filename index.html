@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harish | AI & ML Developer Portfolio</title>
+  <meta name="description" content="Personal portfolio of Harish, an AI & Machine Learning developer building smart web, mobile, and machine learning applications.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a class="logo" href="#home" aria-label="Harish Portfolio">
+        <span class="logo-badge">H</span>
+        <span class="logo-text">Harish<span class="dot">.</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="nav-menu" id="siteNav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-btn">Contact Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-indicator"></span>
+            Available for new opportunities
+          </div>
+          
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight">Harish</span> 👋<br>
+            AI & ML Developer
+          </h1>
+          
+          <p class="hero-subtitle">
+            Final-year engineering student passionate about artificial intelligence, machine learning, and creating clean, user-friendly digital products.
+          </p>
+
+          <div class="hero-actions">
+            <a href="resume.pdf" class="btn btn-primary" download>
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-paper-plane"></i> Get In Touch
+            </a>
+          </div>
+
+          <div class="hero-quick-info">
+            <div class="quick-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Final Year B.Tech (AI & ML)</span>
+            </div>
+            <div class="quick-item">
+              <i class="fas fa-location-dot"></i>
+              <span>Andhra Pradesh, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card">
+            <div class="profile-img-wrapper">
+              <img src="images\certs\WIN_20260331_10_35_24_Pro.jpg" alt="Harish - AI & ML Developer" class="profile-img">
+            </div>
+            <div class="floating-badge badge-top">
+              <i class="fas fa-brain"></i>
+              <div>
+                <strong>AI & Machine Learning</strong>
+                <small>Deep Learning & Data</small>
+              </div>
+            </div>
+            <div class="floating-badge badge-bottom">
+              <i class="fas fa-code"></i>
+              <div>
+                <strong>Web & Mobile</strong>
+                <small>Full Stack & Flutter</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Driven by Curiosity & Problem Solving</h2>
+          <p class="section-desc">Get to know more about my background, passion, and what drives my work.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-card">
+            <h3>Turning complex ideas into simple, valuable software.</h3>
+            <p>
+              I am currently pursuing my <strong>B.Tech in Artificial Intelligence & Machine Learning</strong> at Sasi Institute of Technology and Engineering. I love exploring the intersection where artificial intelligence meets everyday user needs.
+            </p>
+            <p>
+              Whether it is training machine learning models, developing intuitive mobile applications in Flutter, or engineering robust web interfaces, my goal is always to deliver software that is clean, accessible, and purposeful.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Strong foundation in Data Structures, Python & ML algorithms</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Hands-on experience with frontend & backend development</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Fast learner committed to clean code and user experience</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-stats-container">
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-laptop-code"></i></div>
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Technologies & Tools</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+              <div class="stat-number">7+</div>
+              <div class="stat-label">Verified Certifications</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-folder-open"></i></div>
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Featured Projects</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-award"></i></div>
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Dedication to Quality</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Skills & Technologies</span>
+          <h2 class="section-title">My Technical Toolkit</h2>
+          <p class="section-desc">The languages, frameworks, and tools I use to build scalable products.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-python"></i></div>
+            <h4>Python</h4>
+            <p>Data processing, automation scripts, ML algorithms, and backend development.</p>
+            <span class="skill-badge">Core Language</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+            <h4>Machine Learning</h4>
+            <p>Predictive modeling, data analytics, neural networks, and Deep Learning.</p>
+            <span class="skill-badge">Specialization</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <h4>HTML5 & CSS3</h4>
+            <p>Semantic structuring, responsive layouts, modern CSS styling, and accessibility.</p>
+            <span class="skill-badge">Frontend</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-js"></i></div>
+            <h4>JavaScript</h4>
+            <p>Interactive web interfaces, DOM manipulation, asynchronous features, and APIs.</p>
+            <span class="skill-badge">Frontend</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-mobile-screen-button"></i></div>
+            <h4>Flutter</h4>
+            <p>Cross-platform mobile application development for Android and iOS devices.</p>
+            <span class="skill-badge">Mobile App</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <h4>SQL & Firebase</h4>
+            <p>Relational database queries, Firebase authentication, Firestore, and cloud storage.</p>
+            <span class="skill-badge">Database & Backend</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+            <h4>Git & GitHub</h4>
+            <p>Version control, branching workflows, team collaboration, and code management.</p>
+            <span class="skill-badge">DevOps Tool</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+            <h4>Prompt Engineering</h4>
+            <p>Optimizing LLM outputs, AI automation workflows, and generative AI tooling.</p>
+            <span class="skill-badge">Generative AI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Portfolio Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">A selection of projects demonstrating practical application of my skills.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon-box">
+                <i class="fas fa-wrench"></i>
+              </div>
+              <div class="project-category">Mobile App</div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-name">FixNow</h3>
+              <p class="project-description">
+                A comprehensive home service booking application connecting homeowners with trusted electricians, plumbers, AC technicians, and skilled maintenance professionals.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">UI/UX</span>
+                <span class="tag">Mobile</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="#contact" class="project-btn">
+                <span>Discuss Project</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon-box">
+                <i class="fab fa-youtube"></i>
+              </div>
+              <div class="project-category">Web Application</div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-name">YouTube Downloader</h3>
+              <p class="project-description">
+                A clean web utility that enables users to effortlessly download YouTube videos and audio tracks with format and quality options, powered by a Python Flask backend.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">REST API</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="#contact" class="project-btn">
+                <span>Discuss Project</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon-box">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="project-category">Web Development</div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-name">Personal Portfolio</h3>
+              <p class="project-description">
+                A modern, responsive, and accessible personal portfolio website built to showcase technical skills, certifications, and projects with a smooth user experience.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Responsive</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="#home" class="project-btn">
+                <span>You are here</span>
+                <i class="fas fa-check"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certifications-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Credentials</span>
+          <h2 class="section-title">Certifications & Training</h2>
+          <p class="section-desc">Click on any certificate to view the full verified credential in high resolution.</p>
+        </div>
+
+        <div class="certifications-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card" data-index="0">
+            <div class="cert-thumbnail-wrapper">
+              <img src="images/certs/inamgios_internship.jpg" alt="InAmigos Foundation Internship Certificate" class="cert-thumbnail" loading="lazy">
+              <div class="cert-hover-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <span class="cert-badge">Internship</span>
+              <h3 class="cert-title">Content Writing Internship</h3>
+              <p class="cert-issuer"><i class="fas fa-building"></i> InAmigos Foundation</p>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card" data-index="1">
+            <div class="cert-thumbnail-wrapper">
+              <img src="images/certs/nptel_(dl).jpg" alt="NPTEL Deep Learning Certification" class="cert-thumbnail" loading="lazy">
+              <div class="cert-hover-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <span class="cert-badge">Government Certified</span>
+              <h3 class="cert-title">Deep Learning (NPTEL)</h3>
+              <p class="cert-issuer"><i class="fas fa-award"></i> NPTEL • Swayam Ministry of Education</p>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card" data-index="2">
+            <div class="cert-thumbnail-wrapper">
+              <img src="images/certs/ai_bootcamp.jpg" alt="AI Bootcamp Certificate" class="cert-thumbnail" loading="lazy">
+              <div class="cert-hover-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <span class="cert-badge">Bootcamp</span>
+              <h3 class="cert-title">AI Bootcamp</h3>
+              <p class="cert-issuer"><i class="fas fa-brain"></i> Artificial Intelligence & Machine Learning</p>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card" data-index="3">
+            <div class="cert-thumbnail-wrapper">
+              <img src="images/certs/be10x_ai_workshop.jpg" alt="be10x AI Tools Workshop Certificate" class="cert-thumbnail" loading="lazy">
+              <div class="cert-hover-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <span class="cert-badge">Workshop</span>
+              <h3 class="cert-title">be10x AI Workshop</h3>
+              <p class="cert-issuer"><i class="fas fa-robot"></i> be10x • Productivity Tools</p>
+            </div>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="cert-card" data-index="4">
+            <div class="cert-thumbnail-wrapper">
+              <img src="images/certs/intro to pe.jpeg" alt="Introduction to Prompt Engineering Certificate" class="cert-thumbnail" loading="lazy">
+              <div class="cert-hover-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <span class="cert-badge">Foundation</span>
+              <h3 class="cert-title">Introduction to Prompt Engineering</h3>
+              <p class="cert-issuer"><i class="fas fa-wand-magic-sparkles"></i> AI & Prompt Engineering Foundations</p>
+            </div>
+          </div>
+
+          <!-- Cert 6 -->
+          <div class="cert-card" data-index="5">
+            <div class="cert-thumbnail-wrapper">
+              <img src="images/certs/html_and_css.jpg" alt="HTML and CSS Certification" class="cert-thumbnail" loading="lazy">
+              <div class="cert-hover-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <span class="cert-badge">Web Development</span>
+              <h3 class="cert-title">HTML & CSS Web Development</h3>
+              <p class="cert-issuer"><i class="fab fa-html5"></i> Frontend Web Development</p>
+            </div>
+          </div>
+
+          <!-- Cert 7 -->
+          <div class="cert-card" data-index="6">
+            <div class="cert-thumbnail-wrapper">
+              <img src="images/certs/bootstrap_5.jpg" alt="Bootstrap 5 Certification" class="cert-thumbnail" loading="lazy">
+              <div class="cert-hover-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <span class="cert-badge">Design Framework</span>
+              <h3 class="cert-title">Bootstrap 5 Development</h3>
+              <p class="cert-issuer"><i class="fab fa-bootstrap"></i> Responsive Web Design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education & Milestones</h2>
+          <p class="section-desc">My academic foundation and educational journey.</p>
+        </div>
+
+        <div class="education-timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-duration">Current / Final Year</span>
+                <span class="timeline-badge">B.Tech</span>
+              </div>
+              <h3 class="timeline-degree">B.Tech in Artificial Intelligence & Machine Learning</h3>
+              <p class="timeline-institute"><i class="fas fa-school"></i> Sasi Institute of Technology and Engineering</p>
+              <p class="timeline-desc">
+                Focusing on Machine Learning algorithms, Deep Learning, Python programming, neural networks, data structures, and practical software applications.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-duration">Completed</span>
+                <span class="timeline-badge">Diploma</span>
+              </div>
+              <h3 class="timeline-degree">Diploma in Electrical & Electronics Engineering</h3>
+              <p class="timeline-institute"><i class="fas fa-school"></i> Srinivasa Institute of Engineering and Technology</p>
+              <p class="timeline-desc">
+                Gained strong analytical skills, circuits, engineering mathematics, and systematic problem-solving methods.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fas fa-book"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-duration">Completed</span>
+                <span class="timeline-badge">Secondary</span>
+              </div>
+              <h3 class="timeline-degree">Secondary School Certificate (10th Grade)</h3>
+              <p class="timeline-institute"><i class="fas fa-school"></i> Dr. KKR Gowtham School</p>
+              <p class="timeline-desc">
+                Built solid foundations in mathematics, science, logical thinking, and academic excellence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Let's Connect & Collaborate</h2>
+          <p class="section-desc">Have a question, job opportunity, or project idea? Feel free to send a message.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card">
+            <h3>Contact Information</h3>
+            <p>I'm always open to discussing new projects, internship opportunities, or tech discussions.</p>
+            
+            <div class="contact-channels">
+              <div class="contact-channel">
+                <div class="channel-icon"><i class="fas fa-envelope"></i></div>
+                <div class="channel-text">
+                  <span class="label">Email Me</span>
+                  <a href="mailto:harish@example.com" class="value">Contact via Form / Email</a>
+                </div>
+              </div>
+
+              <div class="contact-channel">
+                <div class="channel-icon"><i class="fas fa-location-dot"></i></div>
+                <div class="channel-text">
+                  <span class="label">Location</span>
+                  <span class="value">Andhra Pradesh, India</span>
+                </div>
+              </div>
+
+              <div class="contact-channel">
+                <div class="channel-icon"><i class="fas fa-briefcase"></i></div>
+                <div class="channel-text">
+                  <span class="label">Status</span>
+                  <span class="value">Available for Opportunities</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <span class="socials-label">Connect with me:</span>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/harish-guttula-52669934a" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/harishguttula" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <form id="contactForm" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name <span class="required">*</span></label>
+                  <input type="text" id="name" name="name" placeholder="e.g. John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="e.g. john@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Project Inquiry / Job Opportunity">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Hi Harish, I would like to discuss..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+
+              <div id="formSuccess" class="form-message success-message" style="display: none;">
+                <i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Fullscreen Certificate Modal / Lightbox -->
+  <div id="imageModal" class="cert-modal" aria-hidden="true" role="dialog" aria-label="Certificate Preview">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-dialog">
+      <button class="modal-btn-close" id="modalClose" aria-label="Close preview">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <button class="modal-btn-nav modal-btn-prev" id="prevBtn" aria-label="Previous certificate">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      
+      <button class="modal-btn-nav modal-btn-next" id="nextBtn" aria-label="Next certificate">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <div class="modal-body">
+        <div class="modal-img-container">
+          <img class="modal-img" id="modalImg" alt="Certificate Fullscreen View">
+        </div>
+        <div class="modal-info">
+          <div id="modalCaption" class="modal-caption-text"></div>
+          <div id="modalCounter" class="modal-counter-badge">1 of 7</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="logo-text">Harish<span class="dot">.</span></span>
+        <p>AI & Machine Learning Developer</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Harish. All rights reserved.</p>
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
