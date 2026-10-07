@@ -209,4 +209,49 @@ document.addEventListener("DOMContentLoaded", () => {
       contactForm.reset();
     });
   }
+
+  // ------------------------------------------------------------------------
+  // 5. Resume Direct Download Handler & Visual Feedback
+  // ------------------------------------------------------------------------
+  const resumeDownloadBtns = document.querySelectorAll(".download-resume-btn");
+
+  resumeDownloadBtns.forEach((btn) => {
+    btn.addEventListener("click", async (e) => {
+      // If hosted on http/https (e.g. GitHub Pages, Vercel, Live Server), fetch as Blob to force OS Save dialog
+      if (window.location.protocol === "http:" || window.location.protocol === "https:") {
+        e.preventDefault();
+        const targetUrl = btn.getAttribute("href") || "resume.pdf";
+        const downloadName = btn.getAttribute("download") || "Guttula_Hemanth_Harish_Resume.pdf";
+
+        const originalContent = btn.innerHTML;
+        btn.innerHTML = `<i class="fas fa-spinner fa-spin"></i> <span>Downloading...</span>`;
+
+        try {
+          const response = await fetch(targetUrl);
+          if (!response.ok) throw new Error("Network response was not ok");
+          const blob = await response.blob();
+          const blobUrl = window.URL.createObjectURL(blob);
+
+          const tempLink = document.createElement("a");
+          tempLink.href = blobUrl;
+          tempLink.download = downloadName;
+          document.body.appendChild(tempLink);
+          tempLink.click();
+
+          setTimeout(() => {
+            window.URL.revokeObjectURL(blobUrl);
+            document.body.removeChild(tempLink);
+            btn.innerHTML = `<i class="fas fa-check"></i> <span>Downloaded!</span>`;
+            setTimeout(() => {
+              btn.innerHTML = originalContent;
+            }, 2000);
+          }, 350);
+        } catch (error) {
+          btn.innerHTML = originalContent;
+          window.open(targetUrl, "_blank");
+        }
+      }
+      // If running via file:// protocol, native <a download="..."> executes directly
+    });
+  });
 });

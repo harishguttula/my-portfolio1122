@@ -265,6 +265,28 @@ button, input, textarea {
   box-shadow: 0 6px 20px var(--primary-glow);
 }
 
+.nav-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 18px;
+  background: rgba(56, 189, 248, 0.1);
+  color: var(--accent-cyan);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: var(--radius-full);
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: var(--transition-fast);
+}
+
+.nav-resume-btn:hover {
+  background: rgba(56, 189, 248, 0.22);
+  color: #ffffff;
+  border-color: var(--accent-cyan);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(56, 189, 248, 0.3);
+}
+
 .menu-toggle {
   display: none;
   background: rgba(255, 255, 255, 0.05);
@@ -411,6 +433,27 @@ button, input, textarea {
   color: #ffffff;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-body);
+  border: 1px solid var(--border-card);
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--primary);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.about-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 26px;
+  flex-wrap: wrap;
 }
 
 .hero-quick-info {
@@ -1583,8 +1626,10 @@ button, input, textarea {
     visibility: visible;
   }
 
-  .nav-btn {
+  .nav-btn,
+  .nav-resume-btn {
     width: 100%;
+    justify-content: center;
     text-align: center;
   }
 
